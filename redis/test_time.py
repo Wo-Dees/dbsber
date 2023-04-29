@@ -1,7 +1,7 @@
 from atexit import register
 from json import load, dumps
 from redis import StrictRedis
-from redis_db import time
+from time import time
 
 with open('data/sample.json') as data_file:
     data = load(data_file)

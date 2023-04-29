@@ -3,7 +3,7 @@ from json import load, dumps
 from redis import StrictRedis
 from redis_db import time
 
-with open('sample.json') as data_file:
+with open('data/sample.json') as data_file:
     data = load(data_file)
 
 db_test = StrictRedis(host='localhost', port=6379)
